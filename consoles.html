@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consoles</title>
+    <link rel="stylesheet" href="consoles.css">
+</head>
+<body>
+  <div class="body">
+
+  
+    <div class="entete">
+        <p> <span style="color: blue;"> M</span>axi <span style="color: blue;">S</span>tore <span style="color: blue;">D</span>ouala</p>
+        <a href="index.html">acceuil</a>
+        <div class="bouton-panier" onclick="toggleCart()" style="display: none;">
+              🛒 Panier <span id="cart-count">0</span>
+        </div>
+    </div>
+    <div class="entete1">
+        <h1>CONSOLES DE JEUX VIDEO</h1>
+        <p style="font-size: 15px;">decouvrez notre selection de nouvelle génération</p>
+    </div>
+    <div  id="stock-panier">
+        <h2>mon panier</h2><hr>
+        <ul id="panier-obj"></ul>
+
+    </div>
+  </div>
+    <div class="father-flex">
+        <div class="flex">
+                 <img src="ps5 xbox.jpg" alt="">
+                PLAY STATION 5 PRO
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :400 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 5 PRO', 400000)">Ajouter au panier</button>
+                 
+        </div>
+        <div class="flex">
+               <img src="manette.jpg" alt="">
+                PLAY STATION 3 SLIM
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :75 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 SLIM', 75000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+               <img src="image_ps\ps4 fat.jpeg" >
+                 PLAY STATION 4 FAT
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :140 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 FAT', 140000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+                <img src="image_ps\ps3 slim (2).jpg" >
+                 PLAY STATION 3 slim
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :70 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 slim', 70000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+                <img src="image_ps\ps3 fat.jpg" >
+                 PLAY STATION 3 FAT
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :70 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 FAT', 70000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+                 <img src="image_ps\ps4.jpeg" >
+                 PLAY STATION 4
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :140 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4', 140000)">Ajouter au panier</button>  
+        </div>
+        <div class="flex">
+                <img src="image_ps\ps3-slim.jpg" >
+                 PLAY STATION 3 slim
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :70 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 slim', 70000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+            <img src="image_ps\ps3 fat.jpg" >
+                 PLAY STATION 3 FAT
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :70 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 FAT', 70000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+            <img src="image_ps\ps4 fat.jpeg" >
+                 PLAY STATION 4 FAT
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :140 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 FAT', 140000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+            <img src="image_ps\ps4-pro-hd-ps-store.jpg" >
+                 PLAY STATION 4 PRO
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :155 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 PRO', 155000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+            <img src="canva\ps5.jpg" alt="">
+                PLAY STATION 5 PRO et X box
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :360 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 5 ET X BOX', 360000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+          <img src="image_ps\ps4-pro-hd-ps-store.jpg" >
+          PLAY STATION 4 PRO
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :155 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 PRO', 155000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+           <img src="image_ps\x box 360.jpeg" >
+                 XBOX 360
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :65 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('XBOX', 65000)">Ajouter au panier</button> 
+        </div>
+        <div class="flex">
+            <img src="console ps4.jpg" alt="">
+                PLAY STATION 3 SLIM
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :155 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 SLIM', 155000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+           <img src="console ps4 (2).jpg" alt="">
+                PLAY STATION 4 PRO
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :155 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 PRO', 155000)">Ajouter au panier</button> 
+        </div>
+        <div class="flex">
+            <img src="PS4.jpg" alt="">
+                PLAY STATION 4 PRO
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :155 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 PRO', 155000)">Ajouter au panier</button>
+        </div>
+    </div>
+    <script>
+
+
+      function toggleCart() {
+        document.getElementById("stock-panier").classList.toggle("active");
+      }
+        const buttons = document.querySelectorAll('.panier');
+        const counter = document.getElementById('cart-count');
+        let count = 0;
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      count += 1;
+      counter.textContent = count; 
+    });
+  });
+
+    </script>
+</body>
+</html>

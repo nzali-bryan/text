@@ -1,0 +1,256 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(207, 253, 211);
+    /*background-image: url(Canva/abstrait.jpg);*/
+      background-color: rgb(0, 0, 0);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+#command{
+    margin-right: 80px;
+}
+.entete a{
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    text-decoration: none;
+    background-color:#0051ff;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+   
+
+}
+.bouton-panier{
+     position: fixed;
+      top: 5px;
+      right: 90px;
+      background: #0051ff;
+      color: white;
+      padding: 2px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-right: 0px;
+}
+.bouton-panier span{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    clip-path: circle(15px);
+    color: black;
+}
+.panier{
+    background-color:#0051ff;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+.entete{
+    display: inline;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    font-size: 20px;
+    /*background-color: black;*/
+    backdrop-filter: blur(10px);
+    background-size: 100% 100%;
+    color:rgb(246, 255, 248) ;
+    height: 40px;
+    z-index: 1;
+    
+}
+body #stock-panier{
+    z-index: 4;
+    position: fixed;
+    top: 40px;
+    right: -300px;
+   /* background-color:rgb(7, 252, 19) ;*/
+    background-image: url(Canva/bleu.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 300px;
+    justify-content: center;
+    justify-items: center;
+    transition: right 1s ease;
+
+    /*right: 0px;*/
+    color: white;
+    
+}
+#stock-panier.active{
+    right: 0px;
+}
+.entete p{
+    margin: 0px;
+    margin-top: 3px;
+}
+.entete1{
+   display: block;
+   margin-top:40px;
+   /*background-color: rgb(58, 194, 92);*/
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    
+}
+.father-flex{
+    display: flex;
+    /*background-image: url(Canva/abstrait.jpg);*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(141, 192, 240);
+     /*background-image: url(Canva/lumière\ bleue\,\ particules\ et\ effets\ dynamiques\,\ ambiance\ compétitive\ et\ pre_20250928_192346_0000.jpg);*/
+    
+
+}
+.flex{
+    width: 310px;
+    height: 500px;
+   /* background-image: url(Canva/back\ bleu.jpg);*/
+   background-color: rgba(255, 255, 255, 0.904);
+    backdrop-filter: blur(2px);
+    margin: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 15px rgb(8, 70, 185);
+    color: rgb(0, 0, 0);
+    flex-wrap:  wrap;
+}
+.flex:hover{
+    box-shadow:3px 4px 40px rgb(21, 105, 216) ;
+    transform: translatey(-8px)scale(1.05);
+}
+.flex img{
+    margin-top: 5px;
+    border-radius: 15px;
+    width: 300px;
+    height: 220px;
+}
+#whatsapp{
+    position: static;
+    width: 40px;
+    height: 20px;
+    border-radius: 15px;
+    top: 0px;
+}
+a{
+    display: block;
+    height: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 3px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    background-color:#0051ff;
+    color: white;
+    border-radius: 15px;
+    margin-left: 5px;
+
+}
+@media  screen and (max-width:400px) {
+    .entete a{
+        font-size: 15px;
+        padding: 2px 5px;
+        margin: 0;
+    }
+    .entete p{
+        font-size: 17px;
+        
+    }
+    .entete .bouton-panier{
+        font-size: 15px;
+        padding: 4px;
+        position: fixed;
+        right: 20%;
+    }
+    body{
+        background-size: 100% 190px;
+    }
+    #command{
+        margin-right: 55px;
+    }
+}
+
+.form{
+    background-color: rgb(141, 192, 240);
+    text-align: center;
+    font-size: 20px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 20px 2px #2d72f1d5;
+    backdrop-filter: blur(2px);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgb(255, 255, 255,0.3);
+    border-radius: 15px;  
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.form input{
+    margin-bottom: 10px;
+    font-size: 25px;
+    border-radius: 10px;
+    width: 90%;
+    background: none;
+    border: 100%;
+    color: rgb(0, 0, 0);
+}
+button{
+    padding: 10px 45px;
+    margin: 5% 7%;
+    border-radius: 10px;
+    color:rgb(255, 255, 255);
+    background-color: #2d72f1d5;
+}
+
+textarea{
+    width: 90%;
+    border-radius: 15px;
+    height: 120px;
+    font-family: ' monospace';
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    background-color: rgb(165, 173, 180);
+}
+#radio{
+    background-color: antiquewhite;
+    width: 10%;
+}
+.form1{
+     background-color: rgb(141, 192, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:400px) {
+    .flex img{
+        width: 93%;
+    }
+    .flex{
+        width: 95%;
+    }
+    .form{
+        width: 90%;
+        height: 350px;
+
+
+    }
+    .form input{
+        font-size: 20px;
+    }
+    textarea{
+        height: 100px;
+        font-size: 20px;
+    }
+    
+}

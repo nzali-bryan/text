@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+   <header></header> 
+
+   <div class="navbar">
+    <a href="" class="logo">maxi store</a>
+     <div class="nav-links">
+       <ul>
+        <a href="" class="active">accueil</a>
+        <a href="">acceuil2</a>
+        <a href="">produit</a>
+        <a href="">services</a>
+        <a href="">contact</a>
+       </ul>
+     </div>
+     <img src="11.png" alt="" class="menu">
+   </div>
+   <script>
+    const menu =document.querySelector(".menu")
+    const navlinks=document.querySelector(".nav-links")
+    menu.addEventListener('click',()=>{
+        navlinks.classList.toggle('mobile-menu')
+    })
+    
+   </script>
+</bodp>
+</html>

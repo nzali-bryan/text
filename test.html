@@ -1,0 +1,32 @@
+<!-- Compteur panier -->
+<div>Articles dans le panier : <span id="cart-count">0</span></div>
+
+<!-- Produits -->
+<div class="product">
+  <p>PS5 Slim</p>
+  <button class="panier">Ajouter au panier</button>
+</div>
+
+<div class="product">
+  <p>Xbox Series X</p>
+  <button class="panier">Ajouter au panier</button>
+</div>
+
+<div class="product">
+  <p>Nintendo Switch</p>
+  <button class="panier">Ajouter au panier</button>
+</div>
+
+<script>
+  // Récupérer tous les boutons avec la classe "panier"
+  const buttons = document.querySelectorAll('.panier');
+  const counter = document.getElementById('cart-count');
+  let count = 0;
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      count += 1; // incrémente à chaque clic
+      counter.textContent = count; // met à jour l'affichage
+    });
+  });
+</script>

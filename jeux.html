@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jeux</title>
+    <link rel="stylesheet" href="jeux.css">
+</head>
+<body>
+  <div class="body">
+
+  
+    <div class="entete">
+        <p><span style="color: rgb(0, 132, 255); font-size:larger;">M</span>axi <span style="color: rgb(0, 132, 255); font-size:larger;">S</span>tore <span style="color: rgb(0, 132, 255); font-size:larger;">D</span>ouala</p>
+        <a href="#comm" id="command">Commander</a>
+        <a href="index.html">acceuil</a>
+        <div class="bouton-panier" onclick="toggleCart()" style="display: none;">
+              🛒 Panier <span id="cart-count">0</span>
+        </div>
+    </div>
+    <div class="entete1" style="background-color: black;">
+        <h1>JEUX VIDEO</h1>
+        <p style="font-size: 15px;">decouvrez notre selection de jeux compatible avec toute vos Consoles Gaming </p>
+    </div>
+    <div  id="stock-panier">
+        <h2>mon panier</h2><hr>
+        <ul id="panier-obj"></ul>
+
+    </div>
+  </div>
+    <div class="father-flex">
+        <div class="flex">
+                 <img src="canva\jeux2.jpg" alt="jeux">
+                DATLLATII ||
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>10000FCFA</p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 5 PRO', 400000)">Ajouter au panier</button>
+                 
+        </div>
+        <div class="flex">
+               <img src="canva\jeux1.jpg" alt="jeux">
+                Grand Theft Auto V
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :13 000FCFA</p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 SLIM', 75000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+               <img src="canva\jeux7.jpg"  alt="jeux">
+                 DALLSTON |||
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :7000 FCFA</p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 FAT', 140000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+                <img src="canva\jeux4.jpg" >
+                 GIAMEDUTY ||
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :13 000FCFA</p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 slim', 70000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+                <img src="canva\jeux5.jpg" >
+                 INSTWINT
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :8000 FCFA</p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 FAT', 70000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+                 <img src="canva\jeux6.jpg" >
+                 CATRASEN ||
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :10 000FCF</p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4', 140000)">Ajouter au panier</button>  
+        </div>
+        <div class="flex">
+                <img src="canva\jeux3.jpg" >
+                 Grand Theft Auto
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :13 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 slim', 70000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+            <img src="canva\jeux8.jpg" >
+                 NITALLIAS 11
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :10 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 FAT', 70000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+            <img src="canva\cd 1.jpg" >
+                 STOCK CD
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX: 10 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 FAT', 140000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+            <img src="canva\cd 2.jpg" >
+                 STOCK CD
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX : 9000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 PRO', 155000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+            <img src="canva\cd 4.jpg" alt="">
+                STOCK CD
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :15 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 5 ET X BOX', 360000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+          <img src="canva\cd 7.jpg" >
+          STOCK CD
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :11 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 PRO', 155000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+           <img src="canva\cd 8.jpg" >
+                 STOCK CD
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :9 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('XBOX', 65000)">Ajouter au panier</button> 
+        </div>
+        <div class="flex">
+            <img src="canva\cd 9.jpg" alt="">
+                STOCK CD
+                <p>Lorem ipsum dolo sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :7 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 3 SLIM', 155000)">Ajouter au panier</button>
+        </div>
+        <div class="flex">
+           <img src="canva\cD 10.jpg" alt="">
+                STOCK CD
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et omnis ratione ullam 
+                vero nesciunt odit voluptas, architecto, facilis mollitia atque officia, cupidi
+                tate beatae illum maiores fugiat accusamus incidunt temporibus necessitatibus.</p>
+                <p>PRIX :5 000FCFA </p>
+                <a href="https://wa.me/237673178336" class="link"><img src="image_ps\www1.png" alt="" id="whatsapp" >Whatsapp</a>
+                <button class="panier" onclick="addToCart('PlayStation 4 PRO', 155000)">Ajouter au panier</button> 
+        </div>
+        
+    </div>
+
+    <div class="form1" id="comm">
+     <div class="form">
+         <label for="">Désirez vous un jeux </label> <br>
+            <input type="text" placeholder="entrer votre nom " required style="margin-top: 10px;"><br>
+            <input type="email" placeholder="entrer votre email">
+            <textarea name="" id="" rows="5" cols="30" placeholder="entrer le nom de votre jeux"></textarea><br>
+            <button>reset</button>
+            <button>envoyer</button>
+            
+        </div>
+    </div>
+    <script>
+
+
+      function toggleCart() {
+        document.getElementById("stock-panier").classList.toggle("active");
+      }
+        const buttons = document.querySelectorAll('.panier');
+        const counter = document.getElementById('cart-count');
+        let count = 0;
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      count += 1;
+      counter.textContent = count; 
+    });
+  });
+
+    </script>
+</body>
+</html>
